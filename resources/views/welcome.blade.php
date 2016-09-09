@@ -73,9 +73,7 @@
                 </div>
             @endif
 
-            <div class="content">
-                Ye hamaar hai. 
-            </div>
+            <p>shane</p>
         </div>
     </body>
 </html>
