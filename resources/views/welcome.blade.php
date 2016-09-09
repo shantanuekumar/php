@@ -74,7 +74,7 @@
             @endif
 
             <div class="content">
-                Ye hamaar hai. Iiha kohi matt aao. Baad me aana.
+                Ye hamaar hai. 
             </div>
         </div>
     </body>
