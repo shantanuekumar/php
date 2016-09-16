@@ -17,7 +17,7 @@
 <div class="row">
 <div class="col-md-6">
 <h3>SIGN UP</h3>
-<form method="post" action="{{ URL::to(route('signup'))}}" >
+<form method="post" action="{{route('signup')}}" >
 <div class="form-group {{$errors->has('email') ? 'has-error' : ''}}">
 <label for="email">E-mail</label>
 <input class="form-control" type="text" name="email" id="email" value="{{Request::old('email')}}">
