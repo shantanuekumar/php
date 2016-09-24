@@ -7,4 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class User extends Model implements Authenticatable
 {
   use \Illuminate\Auth\Authenticatable;
+   public function roles()
+    {
+       return $this->belongsToMany('App\role' ,'user_role' , 'user_id' , 'role_id');
+    }
 }
