@@ -1,3 +1,7 @@
+body {
+  background-image: url("app3.jpg");
+  background-size: inherit;
+}
 .new-post{
   padding:16px 0;
   border-bottom:1px solid #ccc;
