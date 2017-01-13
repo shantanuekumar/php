@@ -1,6 +1,6 @@
 @extends('layouts.master1')
 @section('title')
- socioappy
+ Merk ent.
 @endsection
 @section('content')
 @if(count($errors)>0)
@@ -16,7 +16,7 @@
 @endif
 <div class="row">
 <div class="col-md-6">
-<h3>SIGN UP</h3>
+<h3>JOIN US</h3>
 <form method="post" action="{{route('signup')}}" >
 <div class="form-group {{$errors->has('email') ? 'has-error' : ''}}">
 <label for="email">E-mail</label>
@@ -30,12 +30,12 @@
 <label for="password">password</label>
 <input class="form-control" type="password" name="password" id="password" value="{{Request::old('password')}}">
 </div>
-<button type="submit" class="btn btn-primary">submit</button>
+<button type="submit" class="btn btn-primary">sign up</button>
 <input type="hidden" name="_token" value="{{ csrf_token()}}">
 </form>
 </div>
 <div class="col-md-6">
-<h3>SIGN IN</h3>
+<h3>GET IN</h3>
 <form method="post" action="{{route('signin')}}">
 <div class="form-group {{$errors->has('email') ? 'has-error' : ''}}">
 <label for="email">E-mail</label>
@@ -45,7 +45,7 @@
 <label for="password">password</label>
 <input class="form-control" type="password" name="password" id="password" value="{{Request::old('password')}}">
 </div>
-<button type="submit" class="btn btn-primary">submit</button>
+<button type="submit" class="btn btn-primary">sign in</button>
 <input type="hidden" name="_token" value="{{ csrf_token()}}">
 </form>
 </div>
